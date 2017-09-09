@@ -1,9 +1,8 @@
 #pragma once
+#include "stdafx.h"
 class Server
 {
-private:
-
-
+private:	
 	SOCKADDR_IN adres;
 	SOCKET socketListen;
 
@@ -17,7 +16,11 @@ public:
 	void Init();
 	void Run();
 
+	static Server * getInstance();
+
+
 	Server();
 	~Server();
+	
 };
 

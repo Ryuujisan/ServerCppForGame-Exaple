@@ -12,9 +12,12 @@
 #include <tchar.h>
 #include <string>
 #include <WinSock2.h>
+#include <map>
 
 
 // My Class
 #include "Server.h"
+#include "RoomMenager.h"
 #include "ClientMenager.h"
+#include "Client.h"
 // TODO: reference additional headers your program requires here

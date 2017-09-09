@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Menager">
-      <UniqueIdentifier>{7a17bd96-cce5-4c9c-8cf1-9157bd429824}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Menager">
-      <UniqueIdentifier>{d5b8491f-dbb5-4ead-a805-2141cc25775e}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -33,11 +27,14 @@
     <ClInclude Include="Server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientMenager.h">
-      <Filter>Header Files\Menager</Filter>
-    </ClInclude>
     <ClInclude Include="RoomMenager.h">
-      <Filter>Header Files\Menager</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMenager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -50,11 +47,14 @@
     <ClCompile Include="Server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ClientMenager.cpp">
-      <Filter>Source Files\Menager</Filter>
-    </ClCompile>
     <ClCompile Include="RoomMenager.cpp">
-      <Filter>Source Files\Menager</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientMenager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

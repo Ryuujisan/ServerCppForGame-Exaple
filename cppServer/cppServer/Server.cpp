@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "Server.h"
 
+static Server* Instance;
+RoomMenager *roomMenager;
+ClientMenager *clientMenager;
 
 void Server::Init()
 {
@@ -57,7 +60,10 @@ void Server::Run()
 Server::Server()
 {
 	port = 6969;
-//	INSTANCE = &this;
+	Instance = this;
+
+	roomMenager = new RoomMenager();
+	clientMenager = new ClientMenager();
 }
 
 
@@ -66,7 +72,18 @@ Server::~Server()
 }
 
 
-//GETER
+ Server* Server::getInstance()
+{
+	return Instance;
+}
 
+ RoomMenager* getRoomMenager()
+ {
+	 return roomMenager;
+ }
 
+ ClientMenager* getClientMenager()
+ {
+	 return clientMenager;
+ }
 
