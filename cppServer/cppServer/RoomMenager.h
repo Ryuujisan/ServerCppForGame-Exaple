@@ -1,7 +1,9 @@
 #pragma once
-class RoomMenager
+class RoomMenager 
 {
 public:
+
+	
 	RoomMenager();
 	~RoomMenager();
 };

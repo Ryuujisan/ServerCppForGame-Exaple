@@ -2,8 +2,6 @@
 #include "Server.h"
 
 static Server* Instance;
-RoomMenager *roomMenager;
-ClientMenager *clientMenager;
 
 void Server::Init()
 {
@@ -39,7 +37,10 @@ void Server::Run()
 		if (newConection != 0)
 		{
 			std::cout << "New Client Connected\n";
+			Client client = Client(newConection);
+			
 
+			clientMenager->AddPlayer(client);
 		}
 
 	}
@@ -77,12 +78,12 @@ Server::~Server()
 	return Instance;
 }
 
- RoomMenager* getRoomMenager()
+ RoomMenager* Server::getRoomMenager()
  {
 	 return roomMenager;
  }
 
- ClientMenager* getClientMenager()
+ ClientMenager* Server::getClientMenager()
  {
 	 return clientMenager;
  }
