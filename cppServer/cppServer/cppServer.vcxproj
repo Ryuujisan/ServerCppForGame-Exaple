@@ -145,17 +145,22 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstrackRoom.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="ClientMenager.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="Physics.h" />
     <ClInclude Include="RoomMenager.h" />
     <ClInclude Include="Server.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstrackRoom.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="ClientMenager.cpp" />
     <ClCompile Include="cppServer.cpp" />
+    <ClCompile Include="Physics.cpp" />
     <ClCompile Include="RoomMenager.cpp" />
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="stdafx.cpp">

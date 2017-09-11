@@ -20,4 +20,7 @@
 #include "RoomMenager.h"
 #include "ClientMenager.h"
 #include "Client.h"
+#include "Physics.h"
+#include "AbstrackRoom.h"
+#include "Define.h"
 // TODO: reference additional headers your program requires here

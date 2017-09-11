@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Room">
+      <UniqueIdentifier>{b1ced859-2a81-4269-968f-764213a172ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Room">
+      <UniqueIdentifier>{f6d19c8c-f08f-4061-b35e-8c69e5512a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physick">
+      <UniqueIdentifier>{c49dfb02-03b0-4478-bb70-480ec873831b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physick">
+      <UniqueIdentifier>{9b58dedc-f527-4eb7-99ab-d71778e542dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -36,6 +48,15 @@
     <ClInclude Include="Client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AbstrackRoom.h">
+      <Filter>Header Files\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Header Files\Physick</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -55,6 +76,12 @@
     </ClCompile>
     <ClCompile Include="Client.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstrackRoom.cpp">
+      <Filter>Source Files\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Source Files\Physick</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
