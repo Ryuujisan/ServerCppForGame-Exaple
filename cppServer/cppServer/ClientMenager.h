@@ -3,8 +3,8 @@
 
 class ClientMenager
 {
-	friend class Client;
 private:
+	long id;
 	std::map<int, Client> clientList;
 public:
 

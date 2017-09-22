@@ -36,11 +36,10 @@ void Server::Run()
 
 		if (newConection != 0)
 		{
-			std::cout << "New Client Connected\n";
-			Client client = Client(newConection);
+			Client *client = new Client(newConection);
 			
 
-			clientMenager->AddPlayer(client);
+			clientMenager->AddPlayer(*client);
 		}
 
 	}

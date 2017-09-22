@@ -2,14 +2,36 @@
 #include "Client.h"
 
 
-Client::Client()
+void Client::Run()
+{
+	std::cout << "New Client Connected\n";
+
+	while (connect)
+	{
+
+	}
+
+	std::cout << "Disconnected\n";
+}
+
+void Client::CheckConnect()
 {
 }
 
-Client::Client(SOCKET socket)
+Client::Client()
 {
-	Client::socket = socket;
+
 }
+
+Client::Client(SOCKET socket)
+{	
+	Client::socket = socket;
+	connect = true;
+	
+
+}
+
+
 
 
 Client::~Client()

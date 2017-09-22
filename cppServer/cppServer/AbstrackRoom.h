@@ -16,7 +16,7 @@ protected:
 
 public:
 	AbstrackRoom();
-//	AbstrackRoom(int id, Type type, std::string name);
+	AbstrackRoom(int id, std::string name);
 	virtual void Run();
 	~AbstrackRoom();
 };

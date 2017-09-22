@@ -5,13 +5,13 @@
 
 void ClientMenager::AddPlayer(Client client)
 {
-	clientList[0] = client;
+	clientList[id++] = client;
 	std::cout << clientList.size();
 }
 
 ClientMenager::ClientMenager()
 {
-	
+	id = 0;
 }
 
 

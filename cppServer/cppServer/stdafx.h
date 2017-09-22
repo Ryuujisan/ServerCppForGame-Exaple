@@ -13,6 +13,8 @@
 #include <string>
 #include <WinSock2.h>
 #include <map>
+#include <thread>
+#include "boost\thread.hpp"
 
 
 // My Class
